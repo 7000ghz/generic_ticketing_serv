@@ -1,0 +1,75 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(15 , 2fr);
+  grid-gap: 2px;
+  grid-auto-rows: minmax(25px, auto);
+}
+.head {
+  grid-column: 1 / 16;
+  grid-row: 1/4;
+  background: #3bbced;
+}
+.content { 
+  grid-column: 1 / 16;
+  grid-row: 4 / 20;
+  background: #3bbced;
+
+}
+.footer {
+  grid-column: 1/16;
+  grid-row: 20/28;
+  background: #777;
+}
+.book {
+  grid-column: 2/7;
+  grid-row: 5 / 19;
+  background: #8ae348bb;
+}
+.about {
+  grid-column:4/8;
+  grid-row: 21/27;
+  background: #a56dda;
+}
+.quick {
+  grid-column: 9/13;
+  grid-row: 21/27;
+  background: #fac24a;
+}
+.logo {
+  grid-column: 1/1;
+  grid-row: 1/4;
+  background: #777;
+}
+.nav {
+  grid-column: 3/12;
+  grid-row: 2;
+  background-color: yellow;
+}
+.sup {
+  grid-column: 13/16;
+  grid-row: 2;
+  background-color: yellow;
+}
+
+
+/*styles*/
+.nav li {
+  display:  inline;
+  padding-right:  70px;
+}
+.sup li {
+  display:  inline;
+  padding-left: 30px;
+}
+.book ul li {
+  display:  block;
+  padding-right: 40px;
+}
+.book ul li ul li {
+  display:  inline-block;
+  padding-right: 20px;
+  outline: none;
+}
+.glows:focus {
+  outline: 3px groove yellow;
+}
